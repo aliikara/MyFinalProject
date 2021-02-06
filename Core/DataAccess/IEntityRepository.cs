@@ -1,17 +1,14 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
     // Generic Constraint --> Jenerik Kısıt.
-
     // class : Referans Tip Olabilir.
-
     // IEntity : IEntity Olabilir veya IEntity implemente eden bir nesne olabilir.
-
     //new() : New'lenebilir olmalı.
     public interface IEntityRepository <T> where T:class , IEntity , new()
     {
